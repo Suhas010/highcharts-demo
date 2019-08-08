@@ -1,12 +1,11 @@
 import React from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
 import './App.css';
-import SlideRenderer from '../slideRenderer'
-function App() {
-  return (
-    <div className="App">
-        <SlideRenderer />
-    </div>
-  );
-}
+import SlideController from '../slideController';
 
-export default App;
+export default () => (
+  <Router>
+    <SlideController />
+  </Router>
+
+);
