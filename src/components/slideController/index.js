@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Switch, Route, withRouter} from 'react-router-dom';
+import styled from 'styled-components';
+import { Switch, Route, withRouter} from 'react-router-dom';
 import SlideRenderer from '../slideRenderer'
 import { ROUTE, NAV_ROUTE } from '../../utils/routes';
 import KeyListener from '../helpers/KeyEventListener';
@@ -8,7 +9,19 @@ import SlideTwo from '../examples/SlideTwo';
 import SlideThree from '../examples/SlideThree';
 import OneLeft from '../examples/OneLeft';
 import OneRight from '../examples/OneRight';
-
+import { Icon } from 'antd';
+import './index.css'
+const Navogator = styled.div`
+  display: block;
+  position: fixed;
+  bottom: 15%;
+  right: 2%;
+  width: 50px;
+  height: 47px;
+  border: 1px solid #000;
+  border-radius: 16px;
+  background: beige;
+`;
 class SlideController extends Component {
   
   handleKeyPress = ({ code }) => {
@@ -26,6 +39,17 @@ class SlideController extends Component {
     push(navigation[code]);
   }
 
+  getNavigator = () => {
+    return (
+      <Navogator>
+        <Icon type="caret-left" className="arrow-left"/> 
+        <Icon type="caret-up" className="arrow-up"/>
+        <Icon type="caret-down" className="arrow-down"/> 
+        <Icon type="caret-right" className="arrow-right"/> 
+      </Navogator>
+    )
+  }
+
   render() {
     return(
       <KeyListener handleKeyPress={this.handleKeyPress}>
@@ -39,6 +63,7 @@ class SlideController extends Component {
             <Route path={ROUTE.slideThree} exact component={SlideThree} />
           </Switch>
         </div>
+        {this.getNavigator()}
       </KeyListener>
     )
   }

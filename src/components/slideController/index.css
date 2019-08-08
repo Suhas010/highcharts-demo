@@ -1,0 +1,21 @@
+.arrow-left {
+  width: 15px;
+  position: relative;
+  top: 15px;
+  left: 3px;
+}
+.arrow-up {
+  position: relative;
+  left: 1px;
+  top: 2px;
+}
+.arrow-down {
+  position: relative;
+  bottom: -29px;
+  left: -16px;
+}
+.arrow-right {
+  position: relative;
+  left: 30px;
+  top: -3px;
+}
