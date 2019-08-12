@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class SlideContainer extends Component {
+class HomePage extends Component {
   // constructor(props) {
   //   super(props);
 
@@ -16,4 +16,4 @@ class SlideContainer extends Component {
   };
 }
 
-export default SlideContainer;
+export default HomePage;

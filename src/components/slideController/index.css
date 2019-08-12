@@ -1,21 +1,28 @@
 .arrow-left {
+  color: #b1b9b1;
   width: 15px;
   position: relative;
   top: 15px;
   left: 3px;
 }
 .arrow-up {
+  color: #b1b9b1;
   position: relative;
   left: 1px;
   top: 2px;
 }
 .arrow-down {
+  color: #b1b9b1;
   position: relative;
   bottom: -29px;
   left: -16px;
 }
 .arrow-right {
+  color: #b1b9b1;
   position: relative;
   left: 30px;
   top: -3px;
+}
+.active {
+  color: black !important;
 }

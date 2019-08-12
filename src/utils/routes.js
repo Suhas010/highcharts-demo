@@ -12,7 +12,6 @@ export const NAV_ROUTE = {
   '/': {
     path: ROUTE.root,
     ArrowDown: ROUTE.slideOne,
-    ArrowUp: ROUTE.root
   },
   slideOne: {
     path: ROUTE.slideOne,
