@@ -1,20 +1,13 @@
 import React, { Component } from "react";
 import * as THREE from "three";
 import SlideWrapper from "./SlideWrapper";
+import ThreeWrapper from '../helpers/ThreeWrapper';
 class SlideOne extends Component {
 
-  getCamera = (fov = 75, aspect = 2, near = 0.1, far = 5) => {
-    return new THREE.PerspectiveCamera(fov, aspect, near, far);
-  }
-
-  getRenderer = (id = '#slide-one') => {
-    const canvas = document.querySelector(id);
-    return new THREE.WebGLRenderer({canvas});
-  }
 
   componentDidMount() {
-    const renderer = this.getRenderer('#slide-one');
-    const camera = this.getCamera()
+    const renderer = ThreeWrapper.getRenderer('#slide-one');
+    const camera = ThreeWrapper.getCamera()
     camera.position.z = 2;
 
     const scene = new THREE.Scene();
