@@ -1,25 +1,9 @@
-import React, { Component } from 'react';
-import * as THREE from "three";
-import ThreeWrapper from '../helpers/ThreeWrapper';
-THREE.Cache.enabled = true;
+import React from 'react';
 
-class HomePage extends Component {
-  
-  componentDidMount() {
-    const renderer = ThreeWrapper.getRenderer('#home');
-    // const camera = ThreeWrapper.getCamera()
-    // camera.position.z = 2;
-    // const scene = new THREE.Scene();
-    
-  }
-
-  render() {
-    return (
-      <div className="slide-container">
-        <canvas id="home" height="600" width="1300"></canvas>
-      </div>
-    )
-  };
-}
+const HomePage = () => (
+  <div className="slide-container">
+    <h1><a href="https://www.highcharts.com/" target="_balnk">Highcharts</a> React Demo</h1>
+  </div>
+);
 
 export default HomePage;

@@ -1,15 +1,16 @@
 {
-  "name": "threejs-josh-talk",
+  "name": "highcharts-react-demo",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@ant-design/icons": "^4.2.1",
     "antd": "^3.21.2",
+    "highcharts": "^8.1.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-router-dom": "5.0.1",
-    "react-scripts": "3.0.1",
-    "styled-components": "^4.3.2",
-    "three": "^0.107.0"
+    "react-scripts": "^3.4.1",
+    "styled-components": "^4.3.2"
   },
   "scripts": {
     "start": "react-scripts start",

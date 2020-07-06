@@ -5,8 +5,6 @@ export const ROUTE = {
   OneRight: '/OneRight',
   slideTwo: '/slideTwo',
   slideThree: '/slideThree',
-  
-
 }
 export const NAV_ROUTE = {
   '/': {

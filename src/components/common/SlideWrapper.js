@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-
+import "./index.css";
 class SlideWrapper extends Component {
   render() {
-    const { title , number, children} = this.props;
+    const { title , children} = this.props;
     return (
       <div className="slide-container">
-        <div>{`${number} - ${title}`}</div>
+        <div className="heading">{title}</div>
         {children}
       </div>
     )
