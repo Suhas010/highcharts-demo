@@ -7,6 +7,7 @@ import BasicLine from '../examples/line/BasicLine';
 import OneRight from '../examples/OneRight';
 import { ROUTE } from '../../utils/routes';
 import ClickableLine from '../examples/line/ClickableLine';
+import LineWithAnnotation from '../examples/line/LineWithAnnotation';
 const ContentContainer = ({props : { history :{ push }}}) => (
   <div className="App">
     <Switch>
@@ -15,6 +16,7 @@ const ContentContainer = ({props : { history :{ push }}}) => (
       <Route path={ROUTE.WATERFALL_THEAM} exact={true} component={WaterfallChart} />
       <Route path={ROUTE.BASIC_LINE} exact={true} component={BasicLine} />
       <Route path={ROUTE.CLICKABLE_LINE} exact={true} component={ClickableLine} />
+      <Route path={ROUTE.WITH_ANNOTATION} exact={true} component={LineWithAnnotation} />
       <Route path={ROUTE.BAR} exact={true} component={OneRight} />
       <Route path={ROUTE.slideThree} exact={true} component={SlideThree} />
     </Switch>

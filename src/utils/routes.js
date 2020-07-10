@@ -4,6 +4,7 @@ export const ROUTE = {
   WATERFALL_THEAM: '/waterfall-with-theam',
   BASIC_LINE: '/basic-line',
   CLICKABLE_LINE: '/clickable-line',
+  WITH_ANNOTATION: '/line-with-annotation',
   BAR: '/bar',
   PAI: '/pai',
   HEATMAP: '/heatmap',
@@ -34,6 +35,10 @@ export const NAV_ROUTE = [
       {
         title: "Clickable Line Graph",
         path: ROUTE.CLICKABLE_LINE,
+      },
+      {
+        title: "Line Graph with Annotation",
+        path: ROUTE.WITH_ANNOTATION,
       },
     ]
   },
