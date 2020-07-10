@@ -1,5 +1,24 @@
+@import 'https://code.highcharts.com/css/highcharts.css';
+ 
+.highcharts-color-0 {
+  fill: #f45b5b;
+  stroke: #f45b5b;
+}
+.highcharts-credits {
+  display: none;
+}
+/* Titles */
+.highcharts-title {
+  fill: black;
+  font-size: 26px;
+  font-weight: bold;
+}
 .slide-container {
 
+}
+.highchart {
+  width: 1000px;
+  overflow: hidden;
 }
 .heading {
   font-size: 20px;

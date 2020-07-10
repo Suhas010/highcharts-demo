@@ -1,39 +1,47 @@
 export const ROUTE = {
-  root: '/',
-  slideOne: '/slideOne',
-  OneLeft: '/OneLeft',
-  OneRight: '/OneRight',
-  slideTwo: '/slideTwo',
-  slideThree: '/slideThree',
+  ROOT: '/',
+  WATERFALL: '/waterfall',
+  WATERFALL_THEAM: '/waterfall-with-theam',
+  BASIC_LINE: '/basic-line',
+  CLICKABLE_LINE: '/clickable-line',
+  BAR: '/bar',
+  PAI: '/pai',
+  HEATMAP: '/heatmap',
 }
-export const NAV_ROUTE = {
-  '/': {
-    path: ROUTE.root,
-    ArrowDown: ROUTE.slideOne,
+export const NAV_ROUTE = [
+  {
+    title: "Waterfall Graph",
+    path: ROUTE.WATERFALL,
+    subMenu: [
+      {
+        title: "Waterfall",
+        path: ROUTE.WATERFALL
+      },
+      {
+        title: "Waterfall with Theam",
+        path: ROUTE.WATERFALL_THEAM
+      }
+    ]
   },
-  slideOne: {
-    path: ROUTE.slideOne,
-    ArrowDown: ROUTE.slideTwo,
-    ArrowUp: ROUTE.root,
-    ArrowLeft: ROUTE.OneLeft,
-    ArrowRight: ROUTE.OneRight
+  {
+    title: "Line",
+    path: ROUTE.BASIC_LINE,
+    subMenu: [
+      {
+        title: "Basic Line Graph",
+        path: ROUTE.BASIC_LINE,
+      },
+      {
+        title: "Clickable Line Graph",
+        path: ROUTE.CLICKABLE_LINE,
+      },
+    ]
   },
-  OneLeft: {
-    ArrowRight: ROUTE.slideOne,
-  },
-  OneRight: {
-    ArrowLeft: ROUTE.slideOne,
-  },
-  slideTwo: {
-    path: ROUTE.slideTwo,
-    ArrowDown: ROUTE.slideThree,
-    ArrowUp: ROUTE.slideOne
-  },
-  slideThree: {
-    path: ROUTE.slideThree,
-    ArrowUp: ROUTE.slideTwo
+  {
+    title: "Bar Graph",
+    path: ROUTE.BAR,
+    subMenu: []
   }
-
-}
+];
 
 export const name = "suhas";
