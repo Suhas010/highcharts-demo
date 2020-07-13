@@ -3,6 +3,7 @@ import Highcharts from 'highcharts';
 import exportData from 'highcharts/modules/export-data';
 import exporting from 'highcharts/modules/exporting';
 import accessibility from 'highcharts/modules/accessibility';
+import ChartWrapper from '../../common/ChartWrapper';
 
 accessibility(Highcharts)
 const BasicLine = () => {
@@ -82,8 +83,10 @@ const BasicLine = () => {
     });
   }, [])
   return (
-    <div className="line-chart chart" id="container">
-    </div>
+    <ChartWrapper>
+        <div className="line-chart chart" id="container">
+        </div>
+    </ChartWrapper>
   );
 }
 

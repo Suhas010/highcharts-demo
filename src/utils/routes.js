@@ -15,8 +15,10 @@ export const ROUTE = {
   BASIC_BAR: "/basic-bar",
   BAR_COMP: "/bar-comparison",
 
-  BAR: '/bar',
-  PAI: '/pai',
+  PIE: '/pie',
+
+  SCATTER: '/scatter',
+  SCATTER_3D: '/scatter-3d-bubble',
   HEATMAP: '/heatmap',
 }
 export const NAV_ROUTE = [
@@ -27,10 +29,6 @@ export const NAV_ROUTE = [
       {
         title: "Waterfall",
         path: ROUTE.WATERFALL
-      },
-      {
-        title: "Waterfall with Theam",
-        path: ROUTE.WATERFALL_THEAM
       }
     ]
   },
@@ -59,10 +57,6 @@ export const NAV_ROUTE = [
       {
         title: "Basic Area",
         path: ROUTE.BASIC_AREA
-      },
-      {
-        title: "Area with negative value",
-        path: ROUTE.ARE_NEGATIVE
       }
     ]
   },
@@ -81,9 +75,23 @@ export const NAV_ROUTE = [
     ]
   },
   {
-    title: "Bar Graph",
-    path: ROUTE.BAR,
+    title: "Pie",
+    path: ROUTE.PIE,
     subMenu: []
+  },
+  {
+    title: "Scatter",
+    path: ROUTE.SCATTER,
+    subMenu: [
+      {
+      title: "Basic Scatter",
+      path: ROUTE.SCATTER
+      },
+      {
+        title: "3D Bubble Scatter",
+        path: ROUTE.SCATTER_3D
+      }
+    ]
   }
 ];
 
